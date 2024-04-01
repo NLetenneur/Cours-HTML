@@ -1,0 +1,77 @@
+body {
+    font-size: 1rem;
+
+}
+
+.ligne {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.flux_normal {
+
+    background-color: aliceblue;
+    width: auto;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 30px 25px 20px 15px;
+    box-sizing: border-box;
+    padding: 0.5rem;
+
+}
+
+.flux_normal.moitie {
+    flex-basis: 20%;
+}
+
+.flux_normal.trente {
+    flex-basis: 80%;
+}
+
+.rond {
+    background-color: navajowhite;
+    width: 95vw;
+    height: 95vw;
+    border: 2px solid black;
+    border-radius: 50% 50% 50% 50%;
+    text-align: center;
+}
+
+.rotate {
+    animation-duration: 20s;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .flux_normal {
+        width: 55rem;
+    }
+
+    .rond {
+        width: 900px;
+        height: 900px;
+    }
+
+    body {
+        font-size: 1.5rem;
+    }
+
+
+
+}
