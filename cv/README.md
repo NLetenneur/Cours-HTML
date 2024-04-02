@@ -7,3 +7,6 @@ Details
     The form isn't working, as sending messages to an email adress is impossible in HTML or CSS. It's here only to show a form.
 
     The files are already compiled, no action needed.
+
+PATCH
+The URL in the footer is corrected
