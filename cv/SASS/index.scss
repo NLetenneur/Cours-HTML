@@ -1,0 +1,80 @@
+@import "./../bootstrap-5.3.3/scss/bootstrap.scss";
+@import "variables";
+@import "mixins";
+
+html{
+    margin: 0;
+}
+body
+{
+    margin: 0;
+}
+header {
+    margin: 0;
+    border: 0.1rem solid #1a2532;
+}
+footer{
+          margin: 0;
+        border: .1rem solid #1a2532;
+   
+}
+article {
+    background-color: #eeeeee83;
+    margin: .05rem;
+}
+a {
+    color: black;
+}
+
+.bg01{
+    background-color: $primary;
+    text-align: center;
+    padding: .5rem;
+    margin: .05rem;
+    color: white;
+    a {
+        color: white;
+    }
+}
+.bg02{
+    background-color: #1a2532;
+    padding: .5rem;
+    margin: .05rem;
+}
+.bg03{
+    background-color: #9369c4;
+    padding: .5rem;
+    margin: .05rem;
+ 
+}
+
+.ST01 {
+    color: white;
+}
+.ST02 {
+    color: #9369c4;
+}
+
+
+.alignContact {
+    text-align: right;
+}
+.textDanger{
+    color: $danger;
+}
+
+.btn-primary{
+    @include button ($primary, white);
+}
+.btn-primary:hover{
+    background-color: #9369c4;
+    border: #9369c4;
+}
+
+.btn-warning{
+    @include button ($warning, white);
+}
+.btn-warning:hover{
+    background-color: #65cf92;
+    border: #65cf92;
+}
